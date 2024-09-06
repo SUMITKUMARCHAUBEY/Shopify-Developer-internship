@@ -1,38 +1,258 @@
-.App {
-  text-align: center;
+.App{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 1075px) {
+  .App {
+    font-size: 70%;
   }
 }
+@media (max-width: 800px) {
+  .App {
+    font-size: 60%;
+  }
+ 
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner{
+  width: 100%;
+  height: 53px;
+  background-color: #FC6565;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 90%;
+  font-weight: 600;
+}
+.nav{
+width: 85%;
+height: 98px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 35px;
+}
+.btn{
+  text-decoration: none;
+  font-size:100%;
+  font-weight: 500;
+  text-align: left;
+  color: #0000007A;
+ padding: 1.25% 2.25%;
+  border-radius:24px ;
+}
+.btn:hover{
+  background-color: #FCEBA3;
+  color:black;
+}
+.links{
+  width: 80%;
+  margin-left: 15px;
+}
+.logbtn{
+  width: 135%;
+  height: 50px;
+  background-color:#FCEBA3;
+  border-radius: 6px;
+  border: 1px solid #FFFFFF;
+  color: #282C2F;
+  font-size: 100%;
+  font-weight: 600;
+}
+.logbtn:hover{
+  cursor: pointer;
+}
+.poster{
+  width: 85%;
+  height: 400px; 
+  display: flex;
+  /* background-color: #FC6565; */
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.postext{
+width: 40%;
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-top: -11%; 
+align-items: center;
+gap: 10px;
+ 
+}
+.postimg{
+  width: 50%;
+  
+
+}
+.postimg img{
+  width: 97%;
+  /* height: 50%; */
+  object-fit: contain;
+}
+.catagory{
+  margin-top: 50px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.card{
+ 
+  display: flex;
+  width: 100%;
+  height: 170px;
+  border-radius: 24px;
+  background-color:#4695CF26;
+ 
+  justify-content: space-around;
+  
+}
+
+.catdesc{
+  height: 100%;
+  padding-left: 8%;
+  gap: 10px;
+  justify-content:center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.imgCont{
+  /* background-color: #FC6565; */
+  width: 50%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin: -8px 10px;
+  
+  
+}
+.demo{
+  width: 85%;
+  margin-top: 40px;
+}
+.crd{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  border: 1px solid #3232330D;
+  width: 20%;
+  padding: 5%;
+  box-shadow: 0px 4px 15.5px 0px #5D96CF0D;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+.crd:hover{
+  box-shadow: 0px 20px 20px 0px #0d0d0d0d;
+}
+.rent{
+  width: 85%;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.buttn{
+  padding: 1.2% 2%;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #D9D9D9;
+  
+}
+.buttn:hover{
+  background-color: #FCEBA3;
+  color: #2B2B2B;
+  
+}
+.dots{
+  width: 15px;
+  height: 15px;
+  opacity: 0.8;
+  background-color: #27B09E;
+  border-radius: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.App button:hover{
+  cursor: pointer;
+}
+.membership{
+  width: 85%;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imagecont{
+  width: 50%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  background-image: url('./images/Vector.png'); 
+  background-size: 100% 100%; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+.clean{
+  width: 84%;
+  height: 600px;
+  
+}
+.cleandesc{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+}
+.revcard{
+  min-width: 70%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+.revimg{
+  padding: 5%;
+}
+.bgrnd{
+  display: flex;
+  padding: 5%;
+  background-color: #F776841A;
+  gap: 8%;
+  
+  overflow-x: scroll; 
+  scroll-behavior: smooth; 
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+.bgrnd :-webkit-scrollbar{
+  display: none;
+}
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:100%;
+  background-color:#7FBCB40F;
+}
+.footer{
+  width: 100%;
+  height: 400%;
+  background-color: #1A95CF40;
+  display: flex;
+  margin-top: 100PX;
+}
+.lin:hover{
+  cursor: pointer;
 }
